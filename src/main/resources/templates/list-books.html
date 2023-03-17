@@ -22,7 +22,7 @@
                 </p>
 
                 <table class="table table-bordered">
-                    <thread>
+                    <thead>
                         <tr>
                             <th>ID</th>
                             <th>Title</th>
@@ -30,7 +30,7 @@
                             <th>ISBN</th>
                             <th>Price</th>
                         </tr>
-                    </thread>
+                    </thead>
                     <tbody>
                         <tr th:each="book : ${bookList}">
                             <td><a th:hreaf="@{/book/id={id}(id=${book.id})}" th:text=" ${book.id}" > </a></td>
